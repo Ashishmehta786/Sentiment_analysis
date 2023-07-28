@@ -36,10 +36,20 @@
             border-radius: 5px;
             cursor: pointer;
         }
+      .centre-all{
+        
+        justify-content:center;
+        align-items:center;
+        text-align:center;
+    
+   
+        
+      }
       
     </style>
 </head>
 <body>
+  <div class="centre-all">
     <h1>Enter Sentence and Sentiment:</h1>
     <form action="/submit" method="post">
         <label for="sentence">Sentence:</label><br>
@@ -52,8 +62,10 @@
         </select><br><br>
         <input type="submit" value="Submit">
     </form>
+  
     {% if message %}
     <p>{{ message }}</p>
     {% endif %}
+  </div>
 </body>
 </html>
